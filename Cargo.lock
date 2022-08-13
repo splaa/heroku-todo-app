@@ -1162,6 +1162,7 @@ name = "todo"
 version = "0.1.0"
 dependencies = [
  "rocket",
+ "rocket_codegen",
 ]
 
 [[package]]
