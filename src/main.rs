@@ -4,11 +4,15 @@
 fn index() -> &'static str {
     "Hello, world!"
 }
+#[get("/about")]
+fn about() -> &'static str {
+    "This is the about page of my Rocket Demo app"
+}
 
 #[rocket::main]
 async fn main() {
     let _ =  rocket::build()
-        .mount("/", routes![index])
+        .mount("/", routes![index, about])
         .launch()
         .await
         .expect("panic message");
