@@ -6,7 +6,7 @@ fn index() -> &'static str {
 }
 #[get("/about")]
 fn about() -> &'static str {
-    "This is the about page of my Rocket Demo"
+    "This is the about page of my Rocket Demo App"
 }
 
 #[rocket::main]
