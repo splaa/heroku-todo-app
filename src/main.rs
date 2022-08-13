@@ -2,7 +2,7 @@
 
 #[get("/")]
 fn index() -> &'static str {
-    "hello, world!"
+    "Hello, world!"
 }
 
 #[rocket::main]
